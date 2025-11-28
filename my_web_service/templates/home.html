@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>간단 감정분석 서비스</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page">
+    <div class="card">
+        <h1 class="title">간단 감정분석 서비스</h1>
+        <p class="subtitle">
+            문장을 입력하면 긍정/부정을 판별해줍니다 :)
+        </p>
+        <form action="/predict" method="post" class="form">
+            <textarea name="text" rows="5"
+                      placeholder="여기에 문장을 입력해보세요"
+                      class="textarea"></textarea>
+            <button type="submit" class="button">분석하기</button>
+        </form>
+    </div>
+</body>
+</html>

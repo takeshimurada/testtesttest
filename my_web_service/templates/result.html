@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>분석 결과</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page">
+    <div class="card">
+        <h1 class="title">분석 결과</h1>
+        <p class="label">입력한 문장</p>
+        <p class="user-text">{{ user_text }}</p>
+
+        <p class="label">판단</p>
+        <p class="sentiment">{{ sentiment }}</p>
+
+        <a href="/" class="link">다시 분석하기</a>
+    </div>
+</body>
+</html>
